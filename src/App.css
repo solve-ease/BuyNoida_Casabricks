@@ -52,30 +52,6 @@
   mix-blend-mode: multiply;
 }
 
-.property-1 {
-  animation: imageZoom 20s ease-in-out infinite;
-  animation-delay: 0s;
-}
-
-.property-2 {
-  animation: imageZoom 20s ease-in-out infinite;
-  animation-delay: 5s;
-}
-
-.property-3 {
-  animation: imageZoom 20s ease-in-out infinite;
-  animation-delay: 10s;
-}
-
-@keyframes imageZoom {
-  0%, 100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-}
-
 /* Overlay */
 .overlay {
   position: absolute;
