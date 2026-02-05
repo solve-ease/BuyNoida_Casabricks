@@ -195,11 +195,11 @@
   color: #94a3b8;
 }
 
-.email-input:focus {
+/* .email-input:focus {
   border-color: #38bdf8;
   background: rgba(30, 41, 59, 0.5);
   box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.2);
-}
+} */
 
 .notify-btn {
   background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
