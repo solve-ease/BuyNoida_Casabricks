@@ -1,11 +1,12 @@
 import asyncpg
-from asyncpg import Pool
 import logging
 from fastapi import FastAPI
 from contextlib import asynccontextmanager
-
+import os
 
 logger = logging.getLogger(__name__)
+
+dsn = os.getenv("PostgressDSN" , "postgresql://filedb_user:filedb_pass123@localhost:5432/filedb")
 
 @asynccontextmanager
 async def create_conn_pool() :
@@ -13,7 +14,7 @@ async def create_conn_pool() :
     
     try:
         pool = await asyncpg.create_pool(
-            dsn="postgresql://filedb_user:filedb_pass123@localhost:5432/filedb", 
+            dsn=dsn, 
         )
         yield pool
     
