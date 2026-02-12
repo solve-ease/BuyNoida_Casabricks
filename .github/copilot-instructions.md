@@ -1,0 +1,2 @@
+-  Whenever you implement any code/feature, you must not generate any unecessary files for testing the usage of the code/feature. You should only generate files that are necessary for the implementation of the code/feature.
+- For any feature you are implementing just generate a documentaiton file that explain the implementation of the code/feature and how to use it. All these files must be in the docs folder in the root directory of the project. This file must be in markdown format and must be named as the name of the code/feature.
