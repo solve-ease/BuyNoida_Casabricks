@@ -1,25 +1,37 @@
-import { Link } from 'react-router-dom'
+import { useEffect } from 'react'
+import AboutSection from '../../features/home/components/AboutSection'
+import GallerySection from '../../features/home/components/GallerySection'
+import HeroSection from '../../features/home/components/HeroSection'
+import InstagramSection from '../../features/home/components/InstagramSection'
+
+function setMetaTag(name, content) {
+  let metaTag = document.querySelector(`meta[name="${name}"]`)
+
+  if (!metaTag) {
+    metaTag = document.createElement('meta')
+    metaTag.setAttribute('name', name)
+    document.head.appendChild(metaTag)
+  }
+
+  metaTag.setAttribute('content', content)
+}
 
 function HomePage() {
+  useEffect(() => {
+    document.title = 'BuyNoida | Discover Noida Properties Visually'
+    setMetaTag(
+      'description',
+      'BuyNoida helps you discover Noida properties through a guided visual-first experience with curated listings, property insights, and fast inquiry support.',
+    )
+  }, [])
+
   return (
-    <section className="space-y-4">
-      <p className="inline-flex rounded-md bg-emerald-100 px-2 py-1 text-xs font-medium text-emerald-700">
-        Phase 0 active
-      </p>
-      <h2 className="text-2xl font-semibold">App shell is ready for feature implementation.</h2>
-      <p className="max-w-3xl text-slate-600">
-        This baseline replaces the legacy coming-soon UI and provides routing, configuration validation,
-        logging, and API client scaffolding for upcoming phases.
-      </p>
-      <div className="flex flex-wrap gap-3">
-        <Link to="/listings" className="rounded-md bg-slate-900 px-4 py-2 text-sm font-medium text-white">
-          Open Listings Placeholder
-        </Link>
-        <Link to="/property/sample" className="rounded-md border border-slate-300 px-4 py-2 text-sm font-medium text-slate-700">
-          Open Property Placeholder
-        </Link>
-      </div>
-    </section>
+    <>
+      <HeroSection />
+      <AboutSection />
+      <GallerySection />
+      <InstagramSection />
+    </>
   )
 }
 
