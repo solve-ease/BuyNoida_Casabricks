@@ -13,11 +13,11 @@ function HeroSection() {
   }
 
   return (
-    <section className="relative overflow-hidden bg-hero-gradient px-4 pb-20 pt-12 md:pt-20 lg:pb-28">
+    <section className="relative overflow-hidden bg-hero-gradient px-4 pb-20 pt-28 md:pt-32 lg:pb-28">
       <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-[#dfe5ef] to-transparent" />
       <div className="pointer-events-none absolute -left-32 bottom-8 h-60 w-[70vw] rounded-[100%] bg-wave-light/80 blur-3xl" />
       <img
-        src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1400&q=80"
+        src="/home-img.png"
         alt="Modern property in Noida"
         className="pointer-events-none absolute bottom-0 right-0 hidden h-[70%] max-h-[540px] w-[48%] object-cover md:block"
       />
@@ -36,7 +36,8 @@ function HeroSection() {
           initial={{ opacity: 0, y: 14 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.08, duration: 0.55 }}
-          className="mt-2 text-center text-[68px] font-extrabold leading-[0.95] tracking-[0.03em] text-brand-ink sm:text-[92px] md:text-[140px] lg:text-[180px]"
+          className="mt-2 text-center text-[68px] font-bold leading-[0.95] tracking-[0.03em] text-brand-ink sm:text-[92px] md:text-[140px] lg:text-[180px]"
+          style={{ fontFamily: "'K2D', sans-serif", fontWeight: 700 }}
         >
           VISUALLY
         </motion.h1>
@@ -59,7 +60,8 @@ function HeroSection() {
           <button
             type="button"
             onClick={handleStartExploring}
-            className="rounded-xl bg-brand px-8 py-3 text-sm font-semibold text-white transition-all hover:bg-brand-dark"
+            className="rounded-xl px-8 py-3 text-sm font-semibold text-white transition-all"
+            style={{ backgroundColor: 'var(--navy-blue)' }}
           >
             Start Exploring
           </button>
@@ -75,7 +77,7 @@ function HeroSection() {
           initial={{ opacity: 0, y: 14 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.32, duration: 0.55 }}
-          className="mt-16 w-full max-w-xl rounded-2xl border border-white/70 bg-white/55 p-6 backdrop-blur-sm"
+          className="mt-16 w-full max-w-xl rounded-2xl bg-white/10 p-6 "
         >
           <h2 className="text-center text-2xl font-semibold text-slate-800">What’s your budget?</h2>
           <div className="mt-7 grid grid-cols-1 gap-3 sm:grid-cols-3">

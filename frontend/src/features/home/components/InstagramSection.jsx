@@ -1,12 +1,10 @@
-import { MessageCircle } from 'lucide-react'
-
 const instagramTiles = [
-  'https://images.unsplash.com/photo-1600607687644-c7f34b5d9f5a?auto=format&fit=crop&w=600&q=80',
-  'https://images.unsplash.com/photo-1616047006789-b7afc78d8aaf?auto=format&fit=crop&w=600&q=80',
-  'https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=600&q=80',
-  '',
-  '',
-  'https://images.unsplash.com/photo-1617098474202-0d0d7f60f5f6?auto=format&fit=crop&w=600&q=80',
+  '/slider-img-1.png',
+  '/slider-img-2.png',
+  '/slider-img-3.png',
+  '/slider-img-4.png',
+  '/slider-img-5.png',
+  '/slider-img-6.png',
 ]
 
 function InstagramSection() {
@@ -25,7 +23,7 @@ function InstagramSection() {
           ))}
         </div>
         <p className="mt-5 inline-flex w-full items-center justify-center gap-2 text-center text-lg text-slate-600">
-          <MessageCircle size={18} className="text-brand" />
+          <img src="/whatsapp-color-svgrepo-com.png" alt="WhatsApp" className="h-5 w-5" />
           Join Our WhatsApp Community
         </p>
       </div>

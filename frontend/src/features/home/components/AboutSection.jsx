@@ -25,11 +25,27 @@ function AboutSection() {
             and presenting curated listings designed to enhance clarity and instill confidence in potential buyers.
           </p>
 
-          <div className="grid grid-cols-2 gap-4 pt-2 sm:grid-cols-4">
-            <div className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-center text-sm font-semibold text-slate-600">Noida Development Authority</div>
-            <div className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-center text-sm font-semibold text-slate-600">RERA Approved</div>
-            <div className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-center text-sm font-semibold text-slate-600">Asian Paints</div>
-            <div className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-center text-sm font-semibold text-slate-600">Kajaria</div>
+          <div className="grid grid-cols-2 gap-6 pt-2 sm:grid-cols-4">
+            <img
+              src="/noida_dev_auth_logo.png"
+              alt="Noida Development Authority"
+              className="h-16 w-auto object-contain"
+            />
+            <img
+              src="/rera_approved_logo.png"
+              alt="RERA Approved"
+              className="h-16 w-auto object-contain"
+            />
+            <img
+              src="/assian_paints_logo.png"
+              alt="Asian Paints"
+              className="h-16 w-auto object-contain"
+            />
+            <img
+              src="/kajaria_logo.png"
+              alt="Kajaria"
+              className="h-16 w-auto object-contain"
+            />
           </div>
         </motion.div>
 

@@ -11,6 +11,7 @@ export default {
         brand: 'rgb(var(--color-brand) / <alpha-value>)',
         'brand-dark': 'rgb(var(--color-brand-dark) / <alpha-value>)',
         'brand-ink': 'rgb(var(--color-brand-ink) / <alpha-value>)',
+        'brand-navy': 'rgb(var(--color-brand-navy) / <alpha-value>)',
         'wave-light': 'rgb(var(--color-wave-light) / <alpha-value>)',
       },
       backgroundImage: {
